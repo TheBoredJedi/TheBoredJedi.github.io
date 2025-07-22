@@ -6,35 +6,49 @@
   <title>That Baker Girl</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-       margin: 0;
+      margin: 0;
+      padding: 20px;
       font-family: Arial, sans-serif;
       background-color: #fdf1dc;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: flex-start;
+      min-height: 100vh;
       text-align: center;
+      overflow-x: hidden;
     }
     h1 {
-           font-family: 'Great Vibes', cursive;
-      font-size: 4rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(2.5rem, 6vw, 4rem);
       color: #000;
       margin-bottom: 1rem;
     }
     p.tagline {
-      font-size: 1.2em;
+      font-size: clamp(1rem, 3vw, 1.2em);
       color: #aa6f4d;
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
+    }
+    p {
+      font-size: clamp(1rem, 3.5vw, 1.1em);
+      margin: 0.5em 0;
+      padding: 0 1em;
     }
     .buttons {
-      margin-top: 2em;
+      margin-top: 1.5em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      width: 100%;
+      max-width: 300px;
     }
     .buttons a {
       display: inline-block;
       padding: 12px 24px;
-      margin: 0 10px;
       background-color: #aa6f4d;
       color: white;
       text-decoration: none;
@@ -45,7 +59,6 @@
     .buttons a:hover {
       background-color: #8c5230;
     }
-
     footer {
       margin-top: 3em;
       font-size: 0.9em;
@@ -55,14 +68,14 @@
 </head>
 <body>
   <h1>That Baker Girl</h1>
- <!-- <p class="tagline">Happy Birthday Baby!!!</p> -->
+  <!-- <p class="tagline">Happy Birthday Baby!!!</p> -->
 
   <p>Welcome to your go-to place for artisanal bakes, delivered fresh to your doorstep. From Korean Buns to Celebration cakes, everything is made with love and real butter 🧁</p>
 
-   <p>View our delicious menu and place your order online.</p>
+  <p>View our delicious menu and place your order online.</p>
 
   <div class="buttons">
-   <a href="menu.pdf" target="_blank">View Menu</a>
+    <a href="menu.pdf" target="_blank">View Menu</a>
     <a href="https://wa.me/919141041707" target="_blank">Place Order</a>
   </div>
 
